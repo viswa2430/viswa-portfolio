@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Viswa E — Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">Viswa Portfolio</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button id="darkToggle3" class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section">
+        <h2>Selected Projects</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="project1.jpg" alt="Bench Management" class="project-img" />
+                <h3>Bench Management System</h3>
+                <p>A web tool to manage bench employees, roles, skill mapping and availability.</p>
+                <div class="card-actions">
+                    <a class="btn" href="https://bench-management.onrender.com" target="_blank">Live Demo</a>
+                    <a class="btn outline" href="https://github.com/viswa2430" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="project2.jpg" alt="Library Management" class="project-img" />
+                <h3>Library Management System</h3>
+                <p>System to track books, issuing/returning and fines built with Flask + MySQL.</p>
+                <div class="card-actions">
+                    <a class="btn" href="https://library-management-el7t.onrender.com" target="_blank">Live Demo</a>
+                    <a class="btn outline" href="https://github.com/viswa2430" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © <span id="year3"></span> Viswa E
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

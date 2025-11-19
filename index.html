@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Viswa E — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">Viswa Portfolio</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button id="darkToggle" class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section center">
+        <img src="myphoto.jpg" alt="Viswa" class="profile-img" />
+        <h1>Hi, I'm <span class="accent">Viswa E</span></h1>
+        <p class="lead">Final-year BCA student & aspiring Full-Stack Developer.</p>
+
+        <div class="actions">
+            <a class="btn" href="Viswa_Resume.pdf" download>Download Resume</a>
+            <a class="btn outline" href="https://github.com/viswa2430" target="_blank">View GitHub</a>
+            <a class="btn"
+                href="mailto:eviswa24@gmail.com?subject=Contact%20From%20Portfolio&body=Hello%20Viswa%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.">Email</a>
+        </div>
+    </main>
+
+    <footer>
+        Bench Tracker • Library System • © <span id="year"></span> Viswa E
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
