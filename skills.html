@@ -2,48 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Viswa E — Skills</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Viswa E</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <div class="logo">Viswa Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="skills.html" class="active">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="nav-right">
-                <button id="darkToggle2" class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
-            </div>
+        <nav class="nav-container">
+            <div class="logo">VISWA E</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="section">
-        <h2>Skills</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Programming</h3>
-                <p>Java, Python, C, C++, R, HTML, CSS, PHP</p>
+    <main>
+        <section class="hero-professional">
+            <div class="hero-inner">
+                <h2 class="subtitle">Technical Expertise</h2>
+                <h1>Skills & Capabilities</h1>
+                <p class="intro-text">Combining technical development with user-centered design principles to build
+                    high-performance digital products.</p>
             </div>
-            <div class="card">
-                <h3>Databases & Tools</h3>
-                <p>MySQL, VS Code, Flask, Git</p>
+        </section>
+
+        <section class="container">
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;">Web Technologies</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+
+                <div class="approach-item">
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;">Programming</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+
+                <div class="approach-item">
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;">Databases & Tools</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>MySQL</li>
+                        <li>VS Code</li>
+                        <li>Figma (Beginner)</li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <h3>Soft Skills</h3>
-                <p>Teamwork, Communication, Problem solving, Adaptability</p>
+
+            <div class="about-card" style="margin-top: 4rem; text-align: center; border-top: 4px solid var(--accent);">
+                <h3 style="color: var(--accent); margin-bottom: 1rem;">UX Learning Lab</h3>
+                <p style="max-width: 700px; margin: 0 auto 2rem;">Focusing on <strong>Wireframing</strong>, <strong>User
+                        Journey Mapping</strong>, and <strong>Accessibility</strong>. I am dedicated to creating
+                    inclusive digital products that solve user problems efficiently.</p>
+
+                <div class="ux-diagram-wrapper" style="margin-top: 2rem;">
+
+
+                    [Image of the UX design process cycle]
+
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        © <span id="year2"></span> Viswa E
+        <p>&copy; <span class="current-year"></span> Viswa E | Expertly Crafted</p>
     </footer>
 
     <script src="script.js"></script>

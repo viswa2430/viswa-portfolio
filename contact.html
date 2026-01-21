@@ -2,41 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact — Viswa E</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Viswa E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <div class="logo">Viswa Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html" class="active">Contact</a>
-            </div>
-            <div class="nav-right">
-                <button id="darkToggle4" class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
-            </div>
+        <nav class="nav-container">
+            <div class="logo">VISWA E</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="section">
-        <h2>Contact Me</h2>
-        <div class="card">
-            <p><strong>Email</strong>: <a href="mailto:eviswa24@gmail.com">eviswa24@gmail.com</a></p>
-            <p><strong>GitHub</strong>: <a href="https://github.com/viswa2430" target="_blank">github.com/viswa2430</a>
+    <main>
+        <section class="hero-professional">
+            <h1>Get In Touch</h1>
+            <p class="intro-text">
+                I am seeking an entry-level opportunity to apply my knowledge and contribute to the growth of an
+                organization.
+                Let's discuss how we can work together.
             </p>
-            <p><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/eviswa-sjc-8a1746318"
-                    target="_blank">linkedin.com/in/eviswa-sjc-8a1746318</a></p>
-        </div>
+
+            <div class="projects-grid" style="margin-top: 2rem;">
+                <div class="project-card">
+                    <h3>Contact Information</h3>
+                    <p><strong>Location:</strong> Trichy</p>
+                    <p><strong>Email:</strong> eviswa24@gmail.com</p>
+                    <p><strong>Phone:</strong> 9342495116</p>
+                    <div class="cta-group" style="margin-top: 20px;">
+                        <a href="mailto:eviswa24@gmail.com" class="btn">Email Me Now</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Professional Networks</h3>
+                    <p>Check out my code and professional background on these platforms:</p>
+                    <div class="cta-group" style="margin-top: 20px; flex-direction: column;">
+                        <a href="https://github.com/viswa2430" target="_blank" class="btn">GitHub Profile</a>
+                        <a href="https://www.linkedin.com/in/eviswa-sjc-8a1746318" target="_blank" class="btn"
+                            style="margin-left: 0; margin-top: 10px;">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-centered">
+            <h2>Why Hire Me?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">My approach focuses on clean layout, easy navigation, and
+                user-centered thinking.</p>
+
+            <div class="projects-grid" style="margin-top: 0;">
+                <div class="project-card" style="padding: 1.5rem;">
+                    <strong>Responsive Design</strong>
+                </div>
+                <div class="project-card" style="padding: 1.5rem;">
+                    <strong>Visual Consistency</strong>
+                </div>
+                <div class="project-card" style="padding: 1.5rem;">
+                    <strong>Accessible Interfaces</strong>
+                </div>
+                <div class="project-card" style="padding: 1.5rem;">
+                    <strong>Clear Communication</strong>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        © <span id="year4"></span> Viswa E
+        <p>&copy; <span class="current-year"></span> Viswa E. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

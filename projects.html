@@ -2,56 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Viswa E — Projects</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Viswa E</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <div class="logo">Viswa Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="nav-right">
-                <button id="darkToggle3" class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
-            </div>
+        <nav class="nav-container">
+            <div class="logo">VISWA E</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="section">
-        <h2>Selected Projects</h2>
+    <main class="container">
+        <section style="padding-top: 4rem; text-align: center;">
+            <h2 class="subtitle">Selected Works</h2>
+            <h1>Case Studies & Projects</h1>
+        </section>
 
-        <div class="grid">
-            <div class="card">
-                <img src="project1.jpg" alt="Bench Management" class="project-img" />
+        <div class="projects-grid">
+            <article class="project-card">
+                <span class="ux-badge">Personal Branding</span>
+                <h3>UX Portfolio Website</h3>
+                <p><strong>Problem:</strong> Need for a professional platform to demonstrate technical and design
+                    skills.</p>
+                <p><strong>User Type:</strong> Hiring Managers / Design Leads.</p>
+                <p><strong>UX Focus:</strong> Visual consistency, clear information architecture, and
+                    accessibility-first navigation.</p>
+            </article>
+
+            <article class="project-card">
+                <span class="ux-badge">Resource Management</span>
                 <h3>Bench Management System</h3>
-                <p>A web tool to manage bench employees, roles, skill mapping and availability.</p>
-                <div class="card-actions">
-                    <a class="btn" href="https://bench-management.onrender.com" target="_blank">Live Demo</a>
-                    <a class="btn outline" href="https://github.com/viswa2430" target="_blank">GitHub</a>
-                </div>
-            </div>
+                <p><strong>Problem:</strong> Inaccurate tracking of employee project availability.</p>
+                <p><strong>User Type:</strong> HR & Project Managers.</p>
+                <p><strong>UX Focus:</strong> High-efficiency data visualization and reduced cognitive load during
+                    status updates.</p>
+            </article>
 
-            <div class="card">
-                <img src="project2.jpg" alt="Library Management" class="project-img" />
+            <article class="project-card">
+                <span class="ux-badge">Process Optimization</span>
                 <h3>Library Management System</h3>
-                <p>System to track books, issuing/returning and fines built with Flask + MySQL.</p>
-                <div class="card-actions">
-                    <a class="btn" href="https://library-management-el7t.onrender.com" target="_blank">Live Demo</a>
-                    <a class="btn outline" href="https://github.com/viswa2430" target="_blank">GitHub</a>
-                </div>
-            </div>
+                <p><strong>Problem:</strong> Manual errors in book circulation and record keeping.</p>
+                <p><strong>User Type:</strong> Librarians & Students.</p>
+                <p><strong>UX Focus:</strong> Intuitive search experience and clear real-time availability indicators.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <span class="ux-badge">Education Tech</span>
+                <h3>Student Component Tracker</h3>
+                <p><strong>Problem:</strong> Fragmented academic data making progress tracking difficult.</p>
+                <p><strong>User Type:</strong> Faculty & Academic Leads.</p>
+                <p><strong>UX Focus:</strong> Clean dashboard interface designed for rapid data entry and performance
+                    reporting.</p>
+            </article>
         </div>
     </main>
 
     <footer>
-        © <span id="year3"></span> Viswa E
+        <p>&copy; <span class="current-year"></span> Viswa E. Designed for impact.</p>
     </footer>
 
     <script src="script.js"></script>
